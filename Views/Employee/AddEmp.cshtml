@@ -1,0 +1,26 @@
+﻿
+@model EntityFrameWork.Models.Employee
+<form asp-action="AddEmp" class="shadow p-3 bg-white rounded col-lg-7 m-auto">
+    <h2 class="text-center text-success">Add Employee</h2>
+    <div class="row m-3 ">
+        <label asp-for="Name" class="col-12 p-0"><h5>Name</h5></label>
+        <input class="col-12 p-2 rounded border-1 border border-dark " asp-for="Name" id="name" placeholder="Enter Employee Name" />
+    </div>
+    <div class="row m-3 ">
+        <label asp-for="Age" class="col-12 p-0"><h5>Age</h5></label>
+        <input class="col-12 p-2 rounded border-1 border border-dark " asp-for="Age" id="age" placeholder="Enter Employee Age" />
+    </div>
+    <div class="row m-3 ">
+        <label asp-for="Gender" class="col-12 p-0"><h5>Gender</h5></label>
+        <select class="col-12 p-2 rounded border-1 border border-dark" asp-for="Gender" id="gender" placeholder="Enter Employee Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+      @*  <input class="col-12 p-2 rounded border-1 border border-dark " asp-for="Gender" id="gender" placeholder="Enter Employee Gender" /> *@
+    </div>
+    
+
+  
+    <div class="row m-3"><input type="submit" name="AddEmp" class="btn btn-primary" value="Add Employee" /></div>
+</form>
